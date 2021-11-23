@@ -1,0 +1,19 @@
+---
+title: "DDPpga"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r}
+library(plotly)
+plot_ly(z=volcano, type="surface")
+``` 
+```{r}
+library(plotly)
+```
+```{r}
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
